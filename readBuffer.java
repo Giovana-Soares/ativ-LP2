@@ -18,7 +18,7 @@ public class readBuffer implements Runnable{
         sum += sharedLocation.getBuffer();
         System.out.printf("\t\t\t%2d%n", sum);
       }
-      catch(InterreruptedException e){
+      catch(InterruptedException e){
         Thread.currentThread().interrupt();
       }
     }
