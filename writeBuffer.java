@@ -3,7 +3,7 @@ package multihreads;
 import java.securiy.SecureRandom;
 
 public class Main {
-    public class writeBuffer implements Runnble{
+    public class writeBuffer implements Runnable{
         private static final buffer sharedLocation;
         public writeBuffer(buffer sharedLocation) {
             this.sharedLocation = sharedLocation;
@@ -18,7 +18,7 @@ public class Main {
                     sum+=count;
                     System.out.printf("\t%2d\n", sum);
                 )
-                catch(InterruotedException e)
+                catch(InterruptedException e)
                 {
                     Thread..currentThread().interrupt();
                 }
